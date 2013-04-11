@@ -16,7 +16,7 @@ pod 'NSObject+Tap', :git => 'https://github.com/ikesyo/NSObject-Tap.git'
 $ pod install
 ```
 
-or copy two files "NSObject+Tap.{h, m}" to your project.
+or copy two files `NSObject+Tap.{h,m}` to your project.
 
 Then, import the header file.
 
