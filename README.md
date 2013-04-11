@@ -1,4 +1,4 @@
 NSObject-Tap
 ============
 
-`tap:` method to Objective-C borrowed from Ruby.
+`tap:` method for Objective-C borrowed from [Ruby](http://ruby-doc.org/core-2.0/Object.html#method-i-tap).
