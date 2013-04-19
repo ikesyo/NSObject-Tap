@@ -29,18 +29,18 @@ Then, import the header file.
 Initilization:
 
 ```objc
-NSArray *array = [[NSMutableArray array] tap:^(NSMutableArray *me) {
-    [me addObject:@1];
-    [me addObject:@2];
-    [me addObject:@3];
+NSArray *array = [[NSMutableArray array] tap:^(NSMutableArray *x) {
+    [x addObject:@1];
+    [x addObject:@2];
+    [x addObject:@3];
 }];
 ```
 
 ```objc
-Person *person = [[[Person alloc] init] tap:^(Person *me) {
-    me.name = @"Your Name";
-    me.age = 20;
-    me.address = @"Kyoto, Japan";
+Person *person = [[[Person alloc] init] tap:^(Person *p) {
+    p.name = @"Your Name";
+    p.age = 20;
+    p.address = @"Kyoto, Japan";
 }];
 ```
 
@@ -61,22 +61,22 @@ NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 [defaults setObject:@3 forKey:@"3"];
 
 // after
-[[NSUserDefaults standardUserDefaults] tap:^(NSUserDefaults *me) {
-    [me setObject:@1 forKey:@"1"];
-    [me setObject:@2 forKey:@"2"];
-    [me setObject:@3 forKey:@"3"];
+[[NSUserDefaults standardUserDefaults] tap:^(NSUserDefaults *x) {
+    [x setObject:@1 forKey:@"1"];
+    [x setObject:@2 forKey:@"2"];
+    [x setObject:@3 forKey:@"3"];
 }];
 
 
 // NSNotificationCenter
-[[NSNotificationCenter defaultCenter] tap:^(id me) {
-    [me addObserver:self
-           selector:@selector(willEnterForeground:)
-               name:UIApplicationWillEnterForegroundNotification
-             object:nil];
-    [me addObserver:self
-           selector:@selector(didEnterBackground:)
-               name:UIApplicationDidEnterBackgroundNotification
-             object:nil];
+[[NSNotificationCenter defaultCenter] tap:^(id x) {
+    [x addObserver:self
+          selector:@selector(willEnterForeground:)
+              name:UIApplicationWillEnterForegroundNotification
+            object:nil];
+    [x addObserver:self
+          selector:@selector(didEnterBackground:)
+              name:UIApplicationDidEnterBackgroundNotification
+            object:nil];
 }]
 ```
