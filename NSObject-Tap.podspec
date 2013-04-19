@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "NSObject+Tap"
+  s.name         = "NSObject-Tap"
   s.version      = "1.0.0"
   s.summary      = "`tap:` method for Objective-C borrowed from Ruby."
   s.homepage     = "https://github.com/ikesyo/NSObject-Tap"
