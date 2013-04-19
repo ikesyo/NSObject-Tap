@@ -9,6 +9,6 @@
 
 @interface NSObject (Tap)
 
-- (instancetype)tap:(void (^)(id me))block;
+- (instancetype)tap:(void (^)(id x))block;
 
 @end
