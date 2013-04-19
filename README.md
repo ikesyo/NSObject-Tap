@@ -9,7 +9,7 @@ Let's use [CocoaPods](http://cocoapods.org/).
 
 ```ruby
 # Podfile
-pod 'NSObject+Tap', :git => 'https://github.com/ikesyo/NSObject-Tap.git'
+pod 'NSObject-Tap'
 ```
 
 ```sh
