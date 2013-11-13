@@ -16,4 +16,11 @@
     return self;
 }
 
+// It is inspired by the `tapp` RubyGem at http://rubygems.org/gems/tapp.
+- (instancetype)tapp
+{
+    NSLog(@"%@", self);
+    return self;
+}
+
 @end
