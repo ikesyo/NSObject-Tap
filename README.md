@@ -1,7 +1,7 @@
 NSObject-Tap
 ============
 
-`tap:` method for Objective-C borrowed from [Ruby](http://ruby-doc.org/core-2.0/Object.html#method-i-tap).
+`tap:` method for Objective-C borrowed from [Ruby](http://ruby-doc.org/core-2.0/Object.html#method-i-tap). It also supports `tapp` for print debugging use case from [the RubyGem](http://rubygems.org/gems/tapp).
 
 ## Setup
 
@@ -79,4 +79,17 @@ NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
               name:UIApplicationDidEnterBackgroundNotification
             object:nil];
 }]
+```
+
+Use `tapp`:
+
+```objc
+// Outputs "Hello, world!"
+NSString *helloWorld = [@"Hello, world!" tapp];
+
+// Outputs like "<NSObject: 0x7ffbf0402f10>"
+id object = [[[NSObject alloc] init] tapp];
+
+// Between method chains
+NSArray *filtered = [[[@[ @1, @2, @3, @4, @5 ] tapp] filteredArrayUsingPredicate:evenPredicate] tapp];
 ```

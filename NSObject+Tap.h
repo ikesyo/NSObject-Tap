@@ -11,4 +11,7 @@
 
 - (instancetype)tap:(void (^)(id x))block;
 
+/// Calls `NSLog(@"%@", self);`, then returns the receiver.
+- (instancetype)tapp;
+
 @end
