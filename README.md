@@ -1,4 +1,4 @@
-NSObject-Tap
+NSObject-Tap ![License MIT](http://img.shields.io/badge/license-MIT-green.svg) 
 ============
 
 `tap:` method for Objective-C borrowed from [Ruby](http://ruby-doc.org/core-2.0/Object.html#method-i-tap). It also supports `tapp` for print debugging use case from [the RubyGem](http://rubygems.org/gems/tapp).
