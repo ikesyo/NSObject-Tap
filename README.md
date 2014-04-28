@@ -2,6 +2,7 @@ NSObject-Tap ![License MIT](http://img.shields.io/badge/license-MIT-green.svg)
 ============
 
 [![Version](http://img.shields.io/cocoapods/v/NSObject-Tap.svg)](http://img.shields.io/cocoapods/v/NSObject-Tap.svg)
+[![Platform](https://cocoapod-badges.herokuapp.com/p/NSObject-Tap/badge.png)](https://cocoapod-badges.herokuapp.com/p/NSObject-Tap/badge.png)
 
 `tap:` method for Objective-C borrowed from [Ruby](http://ruby-doc.org/core-2.0/Object.html#method-i-tap). It also supports `tapp` for print debugging use case from [the RubyGem](http://rubygems.org/gems/tapp).
 
